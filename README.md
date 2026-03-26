@@ -124,6 +124,6 @@ python main_langgraph.py
 
 ## 👤 Autor
 
-**Paulo** — estudante em transição de carreira para Engenharia de Software, com foco em aplicações com IA e LLMs.
+**Paulo** — estudante de ADS, com foco Desenvolvimento de Software e aplicações com IA.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Paulinhuph-181717?style=flat&logo=github)](https://github.com/Paulinhuph)
