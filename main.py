@@ -49,7 +49,14 @@ cadeia_1 = prompt_cidade | llm | parseador_destino
 cadeia_2 = prompt_restaurantes | llm | parseador_restaurantes
 cadeia_3 = prompt_cultural | llm | StrOutputParser()
 
-cadeia = (cadeia_1 | cadeia_2 | cadeia_3)
+from langchain_core.runnables import RunnableLambda
+
+cadeia = (
+    cadeia_1 
+    | cadeia_2 
+    | RunnableLambda(lambda x: {"cidade": x["cidade"]})
+    | cadeia_3
+)
 
 print("Prompt:", prompt_cidade)
 resposta = cadeia.invoke({"interesse": "praias"})

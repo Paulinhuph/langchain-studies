@@ -34,7 +34,7 @@ def historico_por_sessao(sessao : str):
     return memoria[sessao]
 
 lista_perguntas = [
-    "Quero visitar um lugar no Brasil, famoso por praias e cultura. Pode sugerir?"
+    "Quero visitar um lugar no Brasil, famoso por praias e cultura. Pode sugerir?",
     "Qual a melhor época do ano para ir?"
 ]
 
